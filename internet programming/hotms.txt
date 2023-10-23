@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <script>
+   function hemanth() {
+	var name =
+	document.forms.RegForm.Name.value;
+      var phone =
+      document.forms.RegForm.Telephone.value;
+      var regPhone=/^\d{10}$/;
+
+      if (name == "" || regName.test(name))
+       {
+	    window.alert("Please fill all the areas provided.");
+	    name.focus();
+	    return false;
+       }
+      if (phone == "" || !regPhone.test(phone)) 
+       {
+	    alert("Please enter valid phone number.");
+	    phone.focus();
+	    return false;
+        }
+
+       else
+         {
+           alert(" Successfully Student registration is done click ok to add another user.");
+         }
+	   return true;
+      }
+   </script>
+   <tittle>Hotel Room</tittle>
+</head>
+<body>
+  <h1>Hotel Room</h1>
+  <img src="room.jpg" alt="Room Image">
+  <h2>Room Description</h2>
+  <p>This is a beautiful hotel room with a comfortable queen-size bed, flat-screen TV, and free Wi-Fi. The room also features a private bathroom with a shower and complimentary toiletries.</p>
+  <h2>Room Amenities</h2>
+  <ul>
+    <li>Comfortable queen-size bed</li>
+    <li>Flat-screen TV</li>
+    <li>Free Wi-Fi</li>
+    <li>Private bathroom with shower</li>
+    <li>Complimentary toiletries</li>
+  </ul>
+  <h2>Book Now</h2>
+  <form  onsubmit="return hemanth()" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin"><br>
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout"><br>
+    <input type="submit" value="Book Now">
+  </form>
+</body>
+</html>

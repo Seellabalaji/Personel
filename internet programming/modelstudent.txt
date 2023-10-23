@@ -1,0 +1,11 @@
+<!Doctype html>
+<html>
+ <head>
+   <tittle>STUDENT REGISTRATION FORM</tittle>
+ </head>
+ <body>
+  <form>
+  <label>ENTER THR DETAILS</label>
+  
+   NAME:<input type="
+ </body>
